@@ -1,0 +1,24 @@
+// app global css in SCSS form
+
+.note {
+  background-color: $yellow-1;
+  border: 1px dashed $grey-8;
+
+  .q-toolbar__title {
+    font-family: "Courier New", Roboto, -apple-system, Helvetica Neue, Helvetica, Arial, sans-serif;
+  }
+}
+
+.list-item {
+  transition: all 0.25s ease;
+
+  &.dragging {
+    box-shadow: $shadow-5;
+    transform: rotate(-2deg);
+  }
+}
+
+// Allow displaying \n as <br> on UI
+.whitespace-preline {
+  white-space: pre-line;
+}
